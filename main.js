@@ -30,6 +30,11 @@ function openPage(pageName, elmnt, color) {
   // Show the specific tab content
   document.getElementById(pageName).style.display = "block";
 
+ if (pageName === 'Game' && !window.lemmingStarted) {
+    startLemmingGame(); // ← see below
+    window.lemmingStarted = true;
+  }
+
   // Add the specific color to the button used to open the tab content
   elmnt.style.backgroundColor = color;
 }
@@ -148,3 +153,34 @@ btnToggle.addEventListener("click", () => {
     }
   }
 });
+
+
+function startLemmingGame() {
+ const lemming = document.getElementById('lemming');
+const gameArea = document.getElementById('gameArea');
+const scoreDisplay = document.getElementById('score');
+let gamescore = 0;
+
+function showLemming() {
+  const maxX = gameArea.clientWidth - 100;
+  const maxY = gameArea.clientHeight - 100;
+  const x = Math.random() * maxX;
+  const y = Math.random() * maxY;
+
+  lemming.style.left = x + 'px';
+  lemming.style.top = y + 'px';
+  lemming.style.display = 'block';
+
+  setTimeout(() => {
+    lemming.style.display = 'none';
+  }, 1000);
+}
+
+  lemming.onclick = function () {
+    gamescore++;
+    scoreDisplay.textContent = 'Score: ' + gamescore;
+    lemming.style.display = 'none';
+  };
+
+  setInterval(showLemming, 1500);
+}

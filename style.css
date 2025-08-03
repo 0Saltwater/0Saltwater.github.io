@@ -99,6 +99,7 @@ z-index: 2;
 #Life {background-color: rgb(231, 168, 84);}
 #Hunting {background-color: rgb(209, 151, 74);}
 #Conservation {background-color: rgb(197, 140, 66);}
+#Game {background-color: rgb(197, 140, 66);}
 
 /*About*/
 
@@ -411,9 +412,8 @@ z-index: 2;
     background-color: #222;
     text-align: center;
      padding:1% 0;
+       width: 100vw;
 
-    
-      
 }
 
     .footerAbout {
@@ -506,8 +506,8 @@ z-index: 2;
 
         .tablinks {
             padding: 1% 1%;
-            font-size: 150%;
-            width: 25%;
+            font-size: 120%;
+            width: 20%;
         }
 
         .tabcontent {
@@ -839,14 +839,30 @@ z-index: 2;
 
 
 
+#Game { position: relative; }
 
-
-
-
-.footer
-{
-  width: 100vw;
+.game-container {
+  position: relative;
+  width: 600px;
+  height: 400px;
+  margin: 0 auto;
+  background: rgb(255, 255, 255);
+  border: 2px solid #88c;
+  overflow: hidden;
 }
+
+#lemming {
+  width: 30%;
+  height: 30%;
+  background: brown;
+  border-radius: 100%;
+  position: absolute;
+  display: none;
+  cursor: pointer;
+}
+
+
+
 
     }
 
@@ -1252,6 +1268,30 @@ z-index: 2;
     width: 40%;
     height: 50%;
     padding: 0% 2%;
+}
+
+
+
+#Game { position: relative; }
+
+.game-container {
+  position: relative;
+  width: 600px;
+  height: 400px;
+  margin: 0 auto;
+  background: rgb(255, 255, 255);
+  border: 2px solid #88c;
+  overflow: hidden;
+}
+
+#lemming {
+  width: 30%;
+  height: 30%;
+  background: brown;
+  border-radius: 100%;
+  position: absolute;
+  display: none;
+  cursor: pointer;
 }
 
 
