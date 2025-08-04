@@ -965,13 +965,9 @@ z-index: 2;
             height: auto;
         }
 
-        .wave {
-            width: 100%;
-           
-            height: auto;
-            max-height: 60%;
-            margin-top: 15%;
-        }
+         .wave {
+    display: none;
+  }
 
         .tundra {
             width: 100%;
@@ -1083,7 +1079,7 @@ z-index: 2;
 
 
 
-.funfacts {
+.funfacts { 
   gap: 2vw; /* or 20px */
 }
 
