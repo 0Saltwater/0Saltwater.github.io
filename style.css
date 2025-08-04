@@ -171,7 +171,7 @@ position: relative;
   position: relative;
 }
 
-/* This container is needed to position the front and back side */
+
 .funfact1-inner,
 .funfact2-inner,
 .funfact3-inner {
@@ -497,7 +497,7 @@ position: relative;
         .owlText p {
 
  z-index: 5;
- font-family: 200%;
+ font-size: 200%;
  margin-left: 60%;
  margin-top: 15%;
 }
@@ -557,7 +557,7 @@ position: relative;
     padding: 0% 2%;
 }
 
-.Introduction h1 {
+.Introduction h2 {
     font-size: 300%;
     width: 20%;
     height: 50%;
@@ -575,7 +575,7 @@ position: relative;
   margin-top: 1%;
 }
 
-.WhereFrom h1
+.WhereFrom h2
 {
     font-size: 300%;
     width: 20%;
@@ -596,7 +596,7 @@ position: relative;
 
 
 .funfacts {
-  gap: 2vw; /* or 20px */
+  gap: 2vw; 
 }
 
 .funfact1,
@@ -607,7 +607,7 @@ position: relative;
   padding: 2% 1%;
 }
 
-/* This container is needed to position the front and back side */
+
 .funfact1-inner,
 .funfact2-inner,
 .funfact3-inner {
@@ -668,7 +668,7 @@ position: relative;
     padding: 0% 2%;
 
 }
-.ArcticLife h1 {
+.ArcticLife h2 {
     font-size: 300%;
     width: 30%;
     height: 50%;
@@ -703,7 +703,7 @@ position: relative;
     padding: 0% 2%;
 
 }
-.Exposure h1 {
+.Exposure h2 {
     font-size: 300%;
     width: 40%;
     height: 50%;
@@ -716,7 +716,7 @@ position: relative;
  height: 70%;
  border-radius: 20px;
  
-};
+}
 
 .owl-slides-container
 {
@@ -750,7 +750,7 @@ position: relative;
     padding: 0% 2%;
 
 }
-.Precision h1 {
+.Precision h2 {
     font-size: 300%;
     width: 40%;
     height: 50%;
@@ -786,7 +786,7 @@ position: relative;
     padding: 0% 2%;
 
 }
-.Intelligence h1 {
+.Intelligence h2 {
     font-size: 300%;
     width: 40%;
     height: 50%;
@@ -820,7 +820,7 @@ position: relative;
     padding: 0% 2%;
 
 }
-.Ecosystem h1 {
+.Ecosystem h2 {
     font-size: 300%;
     width: 50%;
     height: 50%;
@@ -856,7 +856,7 @@ position: relative;
     padding: 0% 2%;
 
 }
-.Borders h1 {
+.Borders h2 {
     font-size: 300%;
     width: 40%;
     height: 50%;
@@ -901,6 +901,7 @@ position: relative;
             width: 100%;
             margin: 0;
             padding: 0;
+            background-color: #f7b35a;
         }
         img, video {
   max-width: 100%;
@@ -956,7 +957,7 @@ position: relative;
         .owlText p {
 
  z-index: 5;
- font-family: 200%;
+ font-size: 200%;
  margin-left: 60%;
  margin-top: 25%;
 }
@@ -1044,7 +1045,7 @@ position: relative;
     padding: 0% 2%;
 }
 
-.Introduction h1 {
+.Introduction h2 {
     font-size: 300%;
     width: 20%;
     height: 50%;
@@ -1062,7 +1063,7 @@ position: relative;
   margin-top: 1%;
 }
 
-.WhereFrom h1
+.WhereFrom h2
 {
     font-size: 300%;
     width: 20%;
@@ -1094,7 +1095,7 @@ position: relative;
   padding: 2% 1%;
 }
 
-/* This container is needed to position the front and back side */
+
 .funfact1-inner,
 .funfact2-inner,
 .funfact3-inner {
@@ -1157,7 +1158,7 @@ position: relative;
     padding: 0% 2%;
 
 }
-.ArcticLife h1 {
+.ArcticLife h2 {
     font-size: 300%;
     width: 30%;
     height: 50%;
@@ -1192,7 +1193,7 @@ position: relative;
     padding: 0% 2%;
 
 }
-.Exposure h1 {
+.Exposure h2 {
     font-size: 300%;
     width: 40%;
     height: 50%;
@@ -1205,7 +1206,7 @@ position: relative;
  height: 70%;
  border-radius: 20px;
  
-};
+}
 
 .owl-slides-container
 {
@@ -1239,7 +1240,7 @@ position: relative;
     padding: 0% 2%;
 
 }
-.Precision h1 {
+.Precision h2 {
     font-size: 300%;
     width: 40%;
     height: 50%;
@@ -1275,7 +1276,7 @@ position: relative;
     padding: 0% 2%;
 
 }
-.Intelligence h1 {
+.Intelligence h2 {
     font-size: 300%;
     width: 40%;
     height: 50%;
@@ -1309,7 +1310,7 @@ position: relative;
     padding: 0% 2%;
 
 }
-.Ecosystem h1 {
+.Ecosystem h2 {
     font-size: 300%;
     width: 50%;
     height: 50%;
@@ -1345,7 +1346,7 @@ position: relative;
     padding: 0% 2%;
 
 }
-.Borders h1 {
+.Borders h2 {
     font-size: 300%;
     width: 40%;
     height: 50%;
@@ -1378,7 +1379,7 @@ position: relative;
 }
 
 
-    }
+}   
 
     
 
