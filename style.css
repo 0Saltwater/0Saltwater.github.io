@@ -967,6 +967,7 @@ z-index: 2;
 
          .wave {
     display: none;
+   
   }
 
         .tundra {
@@ -975,12 +976,16 @@ z-index: 2;
             max-width: 100%;
             max-height: 80%;
         }
- .tab-header {
+   .tab-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    z-index: 1001; /* higher than images */
     display: flex;
     justify-content: center;
     padding: 10px;
     background-color: #f7b35a;
-    
   }
   .tablinks{
      font-size: 200%;
@@ -998,7 +1003,6 @@ z-index: 2;
     z-index: 999;
     background-color: #f7b35a;
     padding: 10px 0;
-   
   }
 
   .hamburger
