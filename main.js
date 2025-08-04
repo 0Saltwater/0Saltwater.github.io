@@ -39,6 +39,10 @@ function openPage(pageName, elmnt, color) {
   elmnt.style.backgroundColor = color;
 }
 
+function toggleTabs() {
+  const tabs = document.getElementById('tabLink');
+  tabs.classList.toggle('show');
+}
 
 const btnSubmit = document.querySelector("#btnSubmit");
 const scorebox = document.querySelector("#scorebox");

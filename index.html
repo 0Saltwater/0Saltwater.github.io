@@ -30,12 +30,16 @@
 
 
  
-<div class="tab">
-  <button class="tablinks" onclick="openPage('About', this, 'rgb(247, 179, 90)')"id="defaultOpen">About</button>
-<button class="tablinks" onclick="openPage('Life', this, 'rgb(231, 168, 84)')" >Life in the Arctic</button>
-<button class="tablinks" onclick="openPage('Hunting', this, 'rgb(196, 141, 69)')">Hunting & Behavior</button>
-<button class="tablinks" onclick="openPage('Conservation', this, 'rgb(173, 125, 63)')">Conservation & Curiosities</button>
-<button class="tablinks" onclick="openPage('Game', this, 'rgb(173, 125, 63)')">Game</button>
+<div class="tab-header">
+  <button class="hamburger" onclick="toggleTabs()">Menu</button>
+</div>
+
+<div class="tab" id="tabLink">
+  <button class="tablinks" onclick="openPage('About', this, 'rgb(247, 179, 90)')" id="defaultOpen">About</button>
+  <button class="tablinks" onclick="openPage('Life', this, 'rgb(231, 168, 84)')">Life in the Arctic</button>
+  <button class="tablinks" onclick="openPage('Hunting', this, 'rgb(196, 141, 69)')">Hunting & Behavior</button>
+  <button class="tablinks" onclick="openPage('Conservation', this, 'rgb(173, 125, 63)')">Conservation & Curiosities</button>
+  <button class="tablinks" onclick="openPage('Game', this, 'rgb(173, 125, 63)')">Game</button>
 </div>
 
 
@@ -274,6 +278,10 @@
       <li><a href="#">Privacy Policy</a></li>
     </ul>
   </div>
+  <div class="footerQR">
+    <img src="Images/QRcode.png" alt="QR Code" class="qr-code">
+    </div>
+
 
   <div class="footer-social">
     <h3>Stay Connected</h3>

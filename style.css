@@ -58,14 +58,23 @@ z-index: 2;
  position: absolute;
  z-index: 1;
 }
-
-.tab {
+.hamburger
+{
+  margin-top:50%; 
+}
   
-  overflow: hidden;
+.tab {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
   background-color: #7c7c7c;
+  overflow: hidden;
 }
 
-
+/* Hide hamburger on large screens */
+.tab-header {
+  display: none;
+}
 .tab button {
   background-color: inherit;
   float: left;
@@ -77,13 +86,23 @@ z-index: 2;
 
 .tablinks {
  
-  color: white;
+  color: rgb(255, 255, 255);
   float: left;
   border: none;
   outline: none;
   cursor: pointer;
 
 }
+
+.hamburger {
+  color: white;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+
 
 .tablinks:hover {
   background-color: #575757;
@@ -426,6 +445,13 @@ z-index: 2;
 .footer-links li {
   display: inline-block;
   margin: 0 1%;
+}
+
+.qr-code
+{
+  width: 10%;
+  height: 10%;
+  border-radius: 10px;
 }
 
 .footer-links a,
@@ -868,12 +894,9 @@ z-index: 2;
 
     
     /* ---------- Responsive Design: Mobile ---------- */
-    @media (max-width: 768px) {
+    @media (max-width: 800px) {
 
-        nav ul li {
-            display: inline;
-        }
-            body, html {
+         body, html {
             height: 100%;
             width: 100%;
             margin: 0;
@@ -892,12 +915,12 @@ z-index: 2;
 
         
         .owl {
-            width: auto;
-            max-width: 70%;
-             height: auto;
-            max-height: 95%;
+            width: 45%;
+            max-width: 50%;
+             height: 60%;
+            max-height: 75%;
             margin-left: 55%;
-            margin-top: 5%;
+            margin-top: 15%;
             animation: slideFadeIn 1.2s ease-out;
         }
 
@@ -906,7 +929,7 @@ z-index: 2;
  z-index: 5;
  font-family: 200%;
  margin-left: 60%;
- margin-top: 15%;
+ margin-top: 25%;
 }
 
           .owl2 /*About*/ {
@@ -926,26 +949,57 @@ z-index: 2;
 
         .tundra {
             width: 100%;
-            height: 80%;
+            height: 70%;
             max-width: 100%;
             max-height: 80%;
         }
+ .tab-header {
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    background-color: #f7b35a;
+    
+  }
+  .tablinks{
+     font-size: 200%;
+  }
 
-        .tab {
-            margin-top: 70%;
-            width: 100vw;
-            
-        }
+  /* Hide tabs by default on mobile */
+  .tab {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 80%;
+    left: 0;
+    width: 100vw;
+    z-index: 999;
+    background-color: #f7b35a;
+    padding: 10px 0;
+   
+  }
 
-        .tablinks {
-            padding: 1% 1%;
-            font-size: 150%;
-            width: 25%;
-        }
-
+  .hamburger
+  {
+    background: none;
+  border: none;
+  outline: none;
+  box-shadow: none;
+ font-size: 200%;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  
+  }
+  /* Reveal with 'show' class */
+  .tab.show {
+    display: flex;
+  }
+  
         .tabcontent {
             padding: 1% 1%;
+            margin-top: 30%;
             height: auto;
+            
         }
 
 
@@ -1295,7 +1349,10 @@ z-index: 2;
 }
 
 
-
-
-
     }
+
+    
+
+    
+
+    
